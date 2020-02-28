@@ -37,8 +37,8 @@ class ProcessApi(object):
         """Return the informations for a process  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_process(process_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_process(process_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -58,8 +58,8 @@ class ProcessApi(object):
         """Return the informations for a process  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_process_with_http_info(process_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_process_with_http_info(process_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -124,7 +124,7 @@ class ProcessApi(object):
             files=local_var_files,
             response_type='GetProcess',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -134,8 +134,8 @@ class ProcessApi(object):
         """Return all the processes for your account  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_processes(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_processes(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -156,8 +156,8 @@ class ProcessApi(object):
         """Return all the processes for your account  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_processes_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_processes_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -223,7 +223,7 @@ class ProcessApi(object):
             files=local_var_files,
             response_type='GetProcesses',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),

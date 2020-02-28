@@ -37,8 +37,8 @@ class TransactionalSMSApi(object):
         """Get all the SMS activity (unaggregated events)  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_sms_events(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_sms_events(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -65,8 +65,8 @@ class TransactionalSMSApi(object):
         """Get all the SMS activity (unaggregated events)  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_sms_events_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_sms_events_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -150,7 +150,7 @@ class TransactionalSMSApi(object):
             files=local_var_files,
             response_type='GetSmsEventReport',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -160,8 +160,8 @@ class TransactionalSMSApi(object):
         """Get your SMS activity aggregated over a period of time  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_transac_aggregated_sms_report(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_transac_aggregated_sms_report(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -184,8 +184,8 @@ class TransactionalSMSApi(object):
         """Get your SMS activity aggregated over a period of time  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_transac_aggregated_sms_report_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_transac_aggregated_sms_report_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -255,7 +255,7 @@ class TransactionalSMSApi(object):
             files=local_var_files,
             response_type='GetTransacAggregatedSmsReport',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -265,8 +265,8 @@ class TransactionalSMSApi(object):
         """Get your SMS activity aggregated per day  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_transac_sms_report(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_transac_sms_report(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -289,8 +289,8 @@ class TransactionalSMSApi(object):
         """Get your SMS activity aggregated per day  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_transac_sms_report_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_transac_sms_report_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -360,7 +360,7 @@ class TransactionalSMSApi(object):
             files=local_var_files,
             response_type='GetTransacSmsReport',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -370,8 +370,8 @@ class TransactionalSMSApi(object):
         """Send the SMS campaign to the specified mobile number  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_transac_sms(send_transac_sms, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_transac_sms(send_transac_sms, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -391,8 +391,8 @@ class TransactionalSMSApi(object):
         """Send the SMS campaign to the specified mobile number  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_transac_sms_with_http_info(send_transac_sms, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_transac_sms_with_http_info(send_transac_sms, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -457,7 +457,7 @@ class TransactionalSMSApi(object):
             files=local_var_files,
             response_type='SendSms',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),

@@ -37,8 +37,8 @@ class FoldersApi(object):
         """Create a folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_folder(create_folder, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.create_folder(create_folder, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -58,8 +58,8 @@ class FoldersApi(object):
         """Create a folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_folder_with_http_info(create_folder, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.create_folder_with_http_info(create_folder, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -124,7 +124,7 @@ class FoldersApi(object):
             files=local_var_files,
             response_type='CreateModel',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -134,8 +134,8 @@ class FoldersApi(object):
         """Delete a folder (and all its lists)  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_folder(folder_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_folder(folder_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -155,8 +155,8 @@ class FoldersApi(object):
         """Delete a folder (and all its lists)  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_folder_with_http_info(folder_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_folder_with_http_info(folder_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -221,7 +221,7 @@ class FoldersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -231,8 +231,8 @@ class FoldersApi(object):
         """Returns folder details  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_folder(folder_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_folder(folder_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -252,8 +252,8 @@ class FoldersApi(object):
         """Returns folder details  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_folder_with_http_info(folder_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_folder_with_http_info(folder_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -318,7 +318,7 @@ class FoldersApi(object):
             files=local_var_files,
             response_type='GetFolder',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -328,8 +328,8 @@ class FoldersApi(object):
         """Get the lists in a folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_folder_lists(folder_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_folder_lists(folder_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -351,8 +351,8 @@ class FoldersApi(object):
         """Get the lists in a folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_folder_lists_with_http_info(folder_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_folder_lists_with_http_info(folder_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -425,7 +425,7 @@ class FoldersApi(object):
             files=local_var_files,
             response_type='GetFolderLists',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -435,8 +435,8 @@ class FoldersApi(object):
         """Get all the folders  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_folders(limit, offset, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_folders(limit, offset, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -457,8 +457,8 @@ class FoldersApi(object):
         """Get all the folders  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_folders_with_http_info(limit, offset, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_folders_with_http_info(limit, offset, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -532,7 +532,7 @@ class FoldersApi(object):
             files=local_var_files,
             response_type='GetFolders',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -542,8 +542,8 @@ class FoldersApi(object):
         """Update a contact folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_folder(folder_id, update_folder, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_folder(folder_id, update_folder, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -564,8 +564,8 @@ class FoldersApi(object):
         """Update a contact folder  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_folder_with_http_info(folder_id, update_folder, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_folder_with_http_info(folder_id, update_folder, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -637,7 +637,7 @@ class FoldersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),

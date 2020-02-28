@@ -37,8 +37,8 @@ class SMTPApi(object):
         """Create a transactional email template  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_smtp_template(smtp_template, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.create_smtp_template(smtp_template, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -58,8 +58,8 @@ class SMTPApi(object):
         """Create a transactional email template  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_smtp_template_with_http_info(smtp_template, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.create_smtp_template_with_http_info(smtp_template, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -124,7 +124,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='CreateModel',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -135,8 +135,8 @@ class SMTPApi(object):
 
         Delete hardbounces. To use carefully (e.g. in case of temporary ISP failures)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_hardbounces(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_hardbounces(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -157,8 +157,8 @@ class SMTPApi(object):
 
         Delete hardbounces. To use carefully (e.g. in case of temporary ISP failures)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_hardbounces_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_hardbounces_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -219,7 +219,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -229,8 +229,8 @@ class SMTPApi(object):
         """Delete an inactive transactional email template  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_smtp_template(template_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_smtp_template(template_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -250,8 +250,8 @@ class SMTPApi(object):
         """Delete an inactive transactional email template  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_smtp_template_with_http_info(template_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_smtp_template_with_http_info(template_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -316,7 +316,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -326,8 +326,8 @@ class SMTPApi(object):
         """Get your transactional email activity aggregated over a period of time  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_aggregated_smtp_report(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_aggregated_smtp_report(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -350,8 +350,8 @@ class SMTPApi(object):
         """Get your transactional email activity aggregated over a period of time  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_aggregated_smtp_report_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_aggregated_smtp_report_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -421,7 +421,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='GetAggregatedReport',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -431,8 +431,8 @@ class SMTPApi(object):
         """Get all your transactional email activity (unaggregated events)  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_email_event_report(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_email_event_report(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -461,8 +461,8 @@ class SMTPApi(object):
         """Get all your transactional email activity (unaggregated events)  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_email_event_report_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_email_event_report_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -552,7 +552,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='GetEmailEventReport',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -562,8 +562,8 @@ class SMTPApi(object):
         """Get your transactional email activity aggregated per day  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_smtp_report(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_smtp_report(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -588,8 +588,8 @@ class SMTPApi(object):
         """Get your transactional email activity aggregated per day  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_smtp_report_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_smtp_report_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -667,7 +667,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='GetReports',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -677,8 +677,8 @@ class SMTPApi(object):
         """Returns the template informations  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_smtp_template(template_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_smtp_template(template_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -698,8 +698,8 @@ class SMTPApi(object):
         """Returns the template informations  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_smtp_template_with_http_info(template_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_smtp_template_with_http_info(template_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -764,7 +764,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='GetSmtpTemplateOverview',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -774,8 +774,8 @@ class SMTPApi(object):
         """Get the list of transactional email templates  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_smtp_templates(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_smtp_templates(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -797,8 +797,8 @@ class SMTPApi(object):
         """Get the list of transactional email templates  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_smtp_templates_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_smtp_templates_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -867,7 +867,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='GetSmtpTemplates',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -877,8 +877,8 @@ class SMTPApi(object):
         """Get the personalized content of a sent transactional email  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_transac_email_content(uuid, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_transac_email_content(uuid, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -898,8 +898,8 @@ class SMTPApi(object):
         """Get the personalized content of a sent transactional email  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_transac_email_content_with_http_info(uuid, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_transac_email_content_with_http_info(uuid, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -964,7 +964,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='GetTransacEmailContent',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -975,8 +975,8 @@ class SMTPApi(object):
 
         This endpoint will show the list of emails for past 30 days by default. To retrieve emails before that time, please pass startDate and endDate in query filters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_transac_emails_list(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_transac_emails_list(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1001,8 +1001,8 @@ class SMTPApi(object):
 
         This endpoint will show the list of emails for past 30 days by default. To retrieve emails before that time, please pass startDate and endDate in query filters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_transac_emails_list_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_transac_emails_list_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1075,7 +1075,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='GetTransacEmailsList',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1086,8 +1086,8 @@ class SMTPApi(object):
 
         This endpoint is deprecated. Prefer v3/smtp/email instead.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_template(template_id, send_email, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_template(template_id, send_email, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1109,8 +1109,8 @@ class SMTPApi(object):
 
         This endpoint is deprecated. Prefer v3/smtp/email instead.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_template_with_http_info(template_id, send_email, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_template_with_http_info(template_id, send_email, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1182,7 +1182,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='SendTemplateEmail',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1192,8 +1192,8 @@ class SMTPApi(object):
         """Send a template to your test list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_test_template(template_id, send_test_email, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_test_template(template_id, send_test_email, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1214,8 +1214,8 @@ class SMTPApi(object):
         """Send a template to your test list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_test_template_with_http_info(template_id, send_test_email, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_test_template_with_http_info(template_id, send_test_email, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1287,7 +1287,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1297,8 +1297,8 @@ class SMTPApi(object):
         """Send a transactional email  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_transac_email(send_smtp_email, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_transac_email(send_smtp_email, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1318,8 +1318,8 @@ class SMTPApi(object):
         """Send a transactional email  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_transac_email_with_http_info(send_smtp_email, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_transac_email_with_http_info(send_smtp_email, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1384,7 +1384,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type='CreateSmtpEmail',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1394,8 +1394,8 @@ class SMTPApi(object):
         """Updates a transactional email templates  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_smtp_template(template_id, smtp_template, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_smtp_template(template_id, smtp_template, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1416,8 +1416,8 @@ class SMTPApi(object):
         """Updates a transactional email templates  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_smtp_template_with_http_info(template_id, smtp_template, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_smtp_template_with_http_info(template_id, smtp_template, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1489,7 +1489,7 @@ class SMTPApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),

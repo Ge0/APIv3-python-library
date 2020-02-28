@@ -37,8 +37,8 @@ class SendersApi(object):
         """Create a new sender  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_sender(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.create_sender(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -58,8 +58,8 @@ class SendersApi(object):
         """Create a new sender  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_sender_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.create_sender_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -120,7 +120,7 @@ class SendersApi(object):
             files=local_var_files,
             response_type='CreateSenderModel',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -130,8 +130,8 @@ class SendersApi(object):
         """Delete a sender  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_sender(sender_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_sender(sender_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -151,8 +151,8 @@ class SendersApi(object):
         """Delete a sender  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_sender_with_http_info(sender_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_sender_with_http_info(sender_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -217,7 +217,7 @@ class SendersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -227,8 +227,8 @@ class SendersApi(object):
         """Return all the dedicated IPs for your account  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_ips(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_ips(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -247,8 +247,8 @@ class SendersApi(object):
         """Return all the dedicated IPs for your account  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_ips_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_ips_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -306,7 +306,7 @@ class SendersApi(object):
             files=local_var_files,
             response_type='GetIps',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -316,8 +316,8 @@ class SendersApi(object):
         """Return all the dedicated IPs for a sender  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_ips_from_sender(sender_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_ips_from_sender(sender_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -337,8 +337,8 @@ class SendersApi(object):
         """Return all the dedicated IPs for a sender  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_ips_from_sender_with_http_info(sender_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_ips_from_sender_with_http_info(sender_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -403,7 +403,7 @@ class SendersApi(object):
             files=local_var_files,
             response_type='GetIpsFromSender',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -413,8 +413,8 @@ class SendersApi(object):
         """Get the list of all your senders  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_senders(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_senders(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -435,8 +435,8 @@ class SendersApi(object):
         """Get the list of all your senders  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_senders_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_senders_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -500,7 +500,7 @@ class SendersApi(object):
             files=local_var_files,
             response_type='GetSendersList',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -510,8 +510,8 @@ class SendersApi(object):
         """Update a sender  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_sender(sender_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_sender(sender_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -532,8 +532,8 @@ class SendersApi(object):
         """Update a sender  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_sender_with_http_info(sender_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_sender_with_http_info(sender_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -601,7 +601,7 @@ class SendersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),

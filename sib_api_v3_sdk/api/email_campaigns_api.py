@@ -37,8 +37,8 @@ class EmailCampaignsApi(object):
         """Create an email campaign  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_email_campaign(email_campaigns, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.create_email_campaign(email_campaigns, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -58,8 +58,8 @@ class EmailCampaignsApi(object):
         """Create an email campaign  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_email_campaign_with_http_info(email_campaigns, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.create_email_campaign_with_http_info(email_campaigns, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -124,7 +124,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type='CreateModel',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -134,8 +134,8 @@ class EmailCampaignsApi(object):
         """Delete an email campaign  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_email_campaign(campaign_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_email_campaign(campaign_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -155,8 +155,8 @@ class EmailCampaignsApi(object):
         """Delete an email campaign  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_email_campaign_with_http_info(campaign_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.delete_email_campaign_with_http_info(campaign_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -221,7 +221,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -231,8 +231,8 @@ class EmailCampaignsApi(object):
         """Export the recipients of a campaign  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.email_export_recipients(campaign_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.email_export_recipients(campaign_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -253,8 +253,8 @@ class EmailCampaignsApi(object):
         """Export the recipients of a campaign  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.email_export_recipients_with_http_info(campaign_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.email_export_recipients_with_http_info(campaign_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -322,7 +322,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type='CreatedProcessId',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -332,8 +332,8 @@ class EmailCampaignsApi(object):
         """Get campaign informations  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_email_campaign(campaign_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_email_campaign(campaign_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -353,8 +353,8 @@ class EmailCampaignsApi(object):
         """Get campaign informations  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_email_campaign_with_http_info(campaign_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_email_campaign_with_http_info(campaign_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -419,7 +419,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type='GetEmailCampaign',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -429,8 +429,8 @@ class EmailCampaignsApi(object):
         """Return all your created campaigns  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_email_campaigns(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_email_campaigns(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -455,8 +455,8 @@ class EmailCampaignsApi(object):
         """Return all your created campaigns  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_email_campaigns_with_http_info(async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.get_email_campaigns_with_http_info(_async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -534,7 +534,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type='GetEmailCampaigns',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -544,8 +544,8 @@ class EmailCampaignsApi(object):
         """Send an email campaign id of the campaign immediately  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_email_campaign_now(campaign_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_email_campaign_now(campaign_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -565,8 +565,8 @@ class EmailCampaignsApi(object):
         """Send an email campaign id of the campaign immediately  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_email_campaign_now_with_http_info(campaign_id, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_email_campaign_now_with_http_info(campaign_id, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -631,7 +631,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -642,8 +642,8 @@ class EmailCampaignsApi(object):
 
         A PDF will be sent to the specified email addresses  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_report(campaign_id, send_report, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_report(campaign_id, send_report, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -665,8 +665,8 @@ class EmailCampaignsApi(object):
 
         A PDF will be sent to the specified email addresses  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_report_with_http_info(campaign_id, send_report, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_report_with_http_info(campaign_id, send_report, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -738,7 +738,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -748,8 +748,8 @@ class EmailCampaignsApi(object):
         """Send an email campaign to your test list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_test_email(campaign_id, email_to, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_test_email(campaign_id, email_to, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -770,8 +770,8 @@ class EmailCampaignsApi(object):
         """Send an email campaign to your test list  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.send_test_email_with_http_info(campaign_id, email_to, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.send_test_email_with_http_info(campaign_id, email_to, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -843,7 +843,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -853,8 +853,8 @@ class EmailCampaignsApi(object):
         """Update a campaign status  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_campaign_status(campaign_id, status, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_campaign_status(campaign_id, status, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -875,8 +875,8 @@ class EmailCampaignsApi(object):
         """Update a campaign status  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_campaign_status_with_http_info(campaign_id, status, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_campaign_status_with_http_info(campaign_id, status, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -948,7 +948,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -958,8 +958,8 @@ class EmailCampaignsApi(object):
         """Update a campaign  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_email_campaign(campaign_id, email_campaign, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_email_campaign(campaign_id, email_campaign, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -980,8 +980,8 @@ class EmailCampaignsApi(object):
         """Update a campaign  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_email_campaign_with_http_info(campaign_id, email_campaign, async=True)
+        asynchronous HTTP request, please pass _async=True
+        >>> thread = api.update_email_campaign_with_http_info(campaign_id, email_campaign, _async=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1053,7 +1053,7 @@ class EmailCampaignsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
